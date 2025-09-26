@@ -16,6 +16,7 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
 }
 
 h1,
@@ -49,3 +50,212 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.content {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  justify-content: center;
+  margin: auto;
+}
+.button {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:focus {
+  outline: none;
+}
+.button:focus-visible {
+  outline: 1px solid #FFFFFF;
+  outline-offset: 1px;
+}
+.button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.button:active {
+  background-color: #545050;
+}
+.result {
+  width: 711px;
+}
+.result__video-container {
+  height: 386px;
+  position: relative;
+}
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.search-form {
+  display: flex;
+  width: 100%;
+  margin-top: 16px;
+  align-items: end;
+  justify-content: space-between;
+}
+.search-form__fieldset {
+  border: none;
+}
+.search-form__fieldset-title {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+}
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+.search-form__label {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
+  cursor: pointer;
+}
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #FFFFFF;
+  outline-offset: 1px;
+}
+.search-form__textfield {
+  appearance: none;
+  width: 225px;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+  font-family: inherit;
+  color: #FFF;
+  background-color: transparent;
+  font-size: 18px;
+}
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255 / 0.7);
+  font-size: 18px;
+}
+.search-form__textfield:focus {
+  outline: none;
+}
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #FFFFFF;
+  padding: 1px;
+}
+.search-form__pseudo-checkbox::after {
+  content: "";
+  display: block;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  opacity: 1;
+}
+.search-form__label:hover > .search-form__label-text {
+  text-decoration: underline;
+}
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+}
+.content__details {
+  width: 399px;
+}
+.title {
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 0.94;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+.title .content__accent {
+  color: #545050;
+}
+.content__list-container {
+  height: 298px;
+  width: 399px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+.content__list {
+  display: flex;
+  width: 390px;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.content__list-item {
+  padding: 0 3px;
+}
+
+.content__card-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+.content__card-link:focus {
+  outline: none;
+}
+.content__card-link:focus-visible {
+  outline: 1px solid #FFFFFF;
+}
+.content__card-link:hover {
+  text-decoration: underline;
+}
+.content__card-link:active {
+  background-color: #545050;
+}
+.content__video-card {
+  display: flex;
+}
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+.content__video-card-title {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content__video-card-description {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 0.9;
+  line-clamp: 1;
+}
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+.more-button {
+  width: 390px;
+  height: 34px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
