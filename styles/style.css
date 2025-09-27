@@ -118,10 +118,12 @@ ol {
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 8px;
 }
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
+  margin-bottom: 4px;
 }
 .search-form__label {
   display: flex;
@@ -185,12 +187,13 @@ ol {
   font-weight: 700;
   line-height: 0.94;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: -0.05em;
 }
 .content__accent {
   color: #545050;
 }
 .content__list-container {
+  margin-top: 26px;
   height: 298px;
   width: 399px;
   overflow-y: scroll;
@@ -207,7 +210,9 @@ ol {
 .content__list-item {
   padding: 0 3px;
 }
-
+.content__card-link_current {
+  background-color: #545050;
+}
 .content__card-link {
   display: block;
   color: white;
